@@ -1,0 +1,55 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="start-container">
+      <h1>Memory Spel</h1>
+      <div class="form-input">
+        <h2>Spela mot andra</h2>
+        <label for="player1">Spelare 1</label>
+        <input type="text" id="player1" placeholder="Skriv ditt namn" />
+        <label for="player2">Spelare 2</label>
+        <input type="text" id="player2" placeholder="Skriv ditt namn" />
+        <button class="start-game-btn" type="submit">Starta spelet</button>
+      </div>
+    </div>
+    <div class="game-area">
+      <div class="scene-card">
+        <div class="cards"></div>
+      </div>
+      <aside class="display">
+        <h3>
+          Player <label class="player-turn-lbl">namn_på_spelare</label>'s turn
+        </h3>
+        <h2>Poäng</h2>
+
+        <p class="player-turn"></p>
+        <div>
+          <p class="player-one-name"></p>
+          <p class="player-one-score">0</p>
+        </div>
+        <div>
+          <p class="player-two-name"></p>
+          <p class="player-two-score">0</p>
+        </div>
+
+        <button class="end-game-btn">Avsluta Spel</button>
+        <button class="reset-game-btn">Starta om spel</button>
+      </aside>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

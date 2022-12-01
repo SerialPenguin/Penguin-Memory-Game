@@ -1,0 +1,110 @@
+.start-container h1 {
+  background-color: rgb(7, 99, 229);
+  text-align: center;
+  font-size: 45px;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 25%;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.start-container h2 {
+font-size: 30px;
+background-color: rgb(9, 147, 243);
+width: 50%;
+margin-left: 25%;
+font-family: 'Courier New', Courier, monospace;
+color: white;
+}
+
+.start-container label {
+font-size: 20px;
+}
+
+input {
+height: 2em;
+margin: 0.5%;
+width: 12%;
+}
+
+img {
+width: 150px;
+height: 150px;
+border-radius: 30%;
+/* 4 */
+
+}
+
+.card-div {
+margin: 1%;
+background-color: gray;
+border-radius: 30%;
+width: 150px;
+height: 150px;
+}
+
+
+.card-animation {
+animation-name: test;
+animation-delay: 0s;
+animation-duration: 1s;
+transform: perspective(400px) scaleX(-1);
+}
+
+@keyframes test {
+0% {
+      transform: perspective(400px) scaleX(1);
+  }
+
+  100% {
+      transform: perspective(400px) scaleX(-1);
+  }
+}
+
+
+
+.form-input {
+  text-align: center;
+}
+
+
+.cards {
+display: flex;
+width: 100vw;
+margin: 2%;
+flex-wrap: wrap;
+
+}
+
+.display {
+  padding: 1%;
+  margin-left: 70%;
+  width: 20%;
+  height: 100%;
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px rgb(43, 42, 42);
+  font-family: 'Courier New', Courier, monospace;
+  }
+
+p {
+display:inline-block
+}
+
+.end-game.btn {
+  
+  text-align: center;
+  
+  }
+  
+  .reset-game-btn {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+
+/* Döljer allt förutom huvudmeny */
+
+.game-area {
+display: none;
+}
+
